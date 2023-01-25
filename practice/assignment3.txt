@@ -1,0 +1,18 @@
+Design a web page with 7 button to implement the following functionality
+	
+create a folder
+	
+Create a file
+	
+Write the data into a file
+	
+Append the data into a file
+	
+Read the data from a file
+	
+Delete the file
+	
+Display the contents of the file
+
+
+The names of the folders, files and the content to be written into the files should be taken as input through the textboxes. And the output should also be displayed on the web page itself.

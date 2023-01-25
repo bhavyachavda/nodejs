@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+</head>
+<body>
+    <input id="demo" type="text">
+    <button type="submit" onclick=primenumber()>submit</button>
+    <p id="disp">
+    <script>
+        const primenumber = () =>{
+        const number = document.getElementById('demo').value;
+        const answer = document.getElementById('disp');
+        let arr = [];
+        arr[0] = false;
+        arr[1] = false;
+        for(let i=2; i<=number; i++)
+        {
+            arr.push(true);
+        }
+
+        console.log(arr);
+
+        for(let i=2; i<arr.length; i++)
+        {
+            for(let j=i + i; i<arr.length; j = j + i)
+            {
+                arr[j]=false;
+            }
+        }
+        console.log(arr);
+
+        let fians = "";
+        for(let i =0;i<arr.length; i++)
+        {
+            if(arr[i]==true)
+            fans = fans + "," + i;
+        }
+        answer.innerHTML = fians;
+    }
+    </script>
+</body>
+</html>
